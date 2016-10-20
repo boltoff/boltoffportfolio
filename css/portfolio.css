@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(33, 33, 33);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -9,14 +9,14 @@ body {
 }
 nav {
     top: 0;
-    left: 5%;
+    left: 2%;
     position: fixed;
 }
 nav ul {
     list-style-type: none;
     margin: 10px;
     padding: 10px;
-    width: 150px;
+    width: inherit;
     height: 175px;
 }
 nav ul li {
@@ -29,6 +29,7 @@ nav ul li a {
     font-size: 1.35em;
     margin: 5px;
     padding: 8px 5px;
+    padding-right: 10px;
     text-decoration: none;
     transition-duration: 0.5s;
 }
@@ -39,7 +40,7 @@ a:link {
 }
 nav ul li a:hover {
     transform: scale(1.07);
-    background-color: rgba(28, 32, 39, 0.5);
+    background-color: rgba(62, 62, 62, 0.8);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8);
     color: white;
     border: none;
@@ -48,12 +49,32 @@ nav ul li a:hover {
 }
 h1 {
     text-align: center;
-    border-bottom: 7px double white;
+    color: white;
+}
+hr.star {
+    padding: 0;
+    border: none;
+    border-top: solid 3px;
+    text-align: center;
+    max-width: inherit;
+    margin: 25px auto 30px;
+    border-color: white;
+}
+hr.star:after {
+    content: "\f121";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 3em;
+    padding: 0 0.25em;
+    background-color: rgb(33, 33, 33);
+    color: white;
 }
 figure {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
     max-width: 458px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 figure img {
     width: 100%;
@@ -69,13 +90,14 @@ figcaption {
     min-height: 100vh;
 }
 #leftsect {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(23, 23, 23);
     height: 100vh;
     left: 0;
     top: 0;
     width: inherit;
     position: fixed;
-    padding: inherit;
+    _padding: inherit;
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.9);
 }
 #about img {
     border-radius: 10%;
@@ -84,28 +106,28 @@ figcaption {
 }
 #persinfo {
     background-color: rgba(237, 237, 237, 0.95);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 15px 55px 25px 5px;
     padding: 10px;
     margin-top: 20px;
 }
 #education {
     background-color: rgba(237, 237, 237, 0.95);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 15px 55px 25px 5px;
     padding: 10px;
     margin-top: 30px;
 }
 #myskills {
     background-color: rgba(237, 237, 237, 0.95);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 15px 55px 25px 5px;
     padding: 10px;
     margin-top: 30px;
 }
 #profexp {
     background-color: rgba(237, 237, 237, 0.95);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 15px 55px 25px 5px;
     padding: 10px;
     margin-top: 30px;
