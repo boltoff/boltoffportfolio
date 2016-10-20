@@ -1,6 +1,6 @@
 body {
     background-image: url(/media/img/Background.jpg);
-    background-color: Teal;
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -31,7 +31,6 @@ nav ul li a {
     margin: 5px;
     padding: 8px 5px;
     text-decoration: none;
-    _border-radius: 10%;
     transition-duration: 0.5s;
 }
 nav ul li a:visited,
@@ -55,6 +54,7 @@ h1 {
 figure {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
     max-width: 458px;
+    margin-top: 150px;
 }
 figure img {
     width: 100%;
@@ -64,6 +64,7 @@ figcaption {
     background-color: white;
     padding: 20px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .block {
     min-height: 100vh;
