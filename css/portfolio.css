@@ -1,6 +1,5 @@
 body {
-    background-image: url("media/img/Background.jpg");
-    background-color: #cccccc;
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -68,6 +67,15 @@ figcaption {
 }
 .block {
     min-height: 100vh;
+}
+#leftsect {
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: inherit;
+    position: fixed;
+    padding: inherit;
 }
 #about img {
     border-radius: 10%;
