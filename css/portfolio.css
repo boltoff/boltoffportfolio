@@ -1,6 +1,6 @@
-.container {
-    background-image: url(/media/img/Background.jpg);
-    background-color: black;
+body {
+    background-image: url("media/img/Background.jpg");
+    background-color: #cccccc;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
