@@ -107,22 +107,24 @@
                     <div class="block" id="contact">
                         <h1>Contact</h1>
                         <hr class="star">
-                        <form class="cf">
+                        <form class="cf" action="form-to-email.php" method="POST">
                             <div class="half left cf">
-                                <input type="text" id="input-name" placeholder="Name">
-                                <input type="email" id="input-email" placeholder="Email address">
-                                <input type="text" id="input-subject" placeholder="Subject">
+                                <input name="name" type="text" id="input-name" placeholder="Name">
+                                <input name="email" type="email" id="input-email" placeholder="Email address">
+                                <input name="subject" type="text" id="input-subject" placeholder="Subject">
                             </div>
                             <div class="half right cf">
-                                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                                <textarea name="message" id="input-message" placeholder="Message"></textarea>
                             </div>
-                            <input type="submit" value="Submit" id="input-submit">
+                            <input name="submit" type="submit" value="Send email" id="input-submit">
                         </form>
+                        <footer>
+                            <p>© Vladislav Boltov. 2016</p>
+                        </footer>
                     </div>
                 </section>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
