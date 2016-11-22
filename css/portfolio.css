@@ -95,7 +95,8 @@ form {
     margin: 20px auto;
     height: 50%;
 }
-input, textarea {
+input,
+textarea {
     border: 0;
     outline: 0;
     padding: 1em;
@@ -146,7 +147,10 @@ footer {
 #about img {
     border-radius: 50%;
     max-width: 250px;
-    height: 250px;
+    max-height: 250px;
+}
+#alterphoto {
+    display: none;
 }
 #persinfo {
     margin-top: 20px;
@@ -223,10 +227,50 @@ footer {
     border-radius: 10px;
     color: white;
 }
+@media (max-width: 1030px) {
+    #navcol {
+        display: none;
+    }
+    #rightcolumn {
+        width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    figure {
+        max-width: 800px;
+    }
+    #rightcolumn {
+        width: 100%;
+    }
+    #imgcolumn {
+        display: none;
+    }
+    #chatcolumn {
+        width: 100%;
+    }
+    #alterphoto {
+        display: block;
+        position: inherit;
+        left: 25%;
+    }
+}
 @media (max-width: 480px) {
     .half {
         width: 100%;
         float: none;
         margin-bottom: 0;
+    }
+    footer {
+        position: inherit;
+        bottom: 20px;
+    }
+}
+@media (max-width: 380px) {
+    #alterphoto {
+        left: 25%;
+    }
+    #about img {
+        max-width: 150px;
+        max-height: 150px;
     }
 }
