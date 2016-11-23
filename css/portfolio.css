@@ -6,6 +6,7 @@ body {
     color: black;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 nav {
     top: 0;
@@ -135,6 +136,40 @@ footer {
 .left {
     margin-right: 2%;
 }
+#menubutton {
+    display: none;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    opacity: 0.7;
+    z-index: 99;
+}
+#menubutton:hover {
+    opacity: 1;
+}
+#exitmenubutton {
+        display: none;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    opacity: 0.7;
+    z-index: 99;
+}
+#exitmenubutton:hover {
+    opacity: 1;
+}
+#mobilebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    overflow-x: visible;
+    display: none;
+}
 #leftsect {
     background-color: rgb(23, 23, 23);
     height: 100vh;
@@ -231,8 +266,16 @@ footer {
     #navcol {
         display: none;
     }
+    #menubutton {
+        display: inline-block;
+    }
     #rightcolumn {
         width: 100%;
+        left: 0px;
+        
+    }
+    #mobilebar {
+        display: block;
     }
 }
 @media (max-width: 991px) {
@@ -272,5 +315,10 @@ footer {
     #about img {
         max-width: 150px;
         max-height: 150px;
+    }
+}
+@media (max-width: 280px) {
+    #menubutton {
+        transform: scale(0.5);
     }
 }
