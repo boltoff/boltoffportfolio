@@ -36,7 +36,7 @@ nav ul li a {
     transition-duration: 0.5s;
 }
 nav ul li a:visited,
-a:link {
+nav ul li a:link {
     color: white;
     text-decoration: none;
 }
@@ -155,6 +155,7 @@ footer {
     margin-left: 20px;
     margin-top: 5px;
     opacity: 0.7;
+    text-decoration: none;
 }
 #menubutton:hover,
 #exitmenubutton:hover {
@@ -165,11 +166,14 @@ footer {
     top: 0;
     left: -300px;
     width: 300px;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(23, 23, 23);
     box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.9);
     overflow-x: visible;
     display: none;
+}
+#mobnav {
+    position: inherit;
 }
 #leftsect {
     background-color: rgb(23, 23, 23);
@@ -322,10 +326,5 @@ footer {
     }
     #mobilebar {
         left: -350px;
-    }
-}
-@media (max-width: 280px) {
-    #menubutton {
-        transform: scale(0.5);
     }
 }
