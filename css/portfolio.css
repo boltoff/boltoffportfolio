@@ -117,7 +117,7 @@ footer {
     bottom: 10px;
 }
 .block {
-    min-height: 100vh;
+    min-height: 100%;
 }
 .chat {
     background-color: rgba(40, 157, 253, 0.95);
