@@ -6,7 +6,7 @@ body {
     color: black;
     margin: 0px;
     padding: 0px;
-/*    min-width: 250px;*/
+    min-width: 250px;
     overflow-x: hidden;
 }
 nav {
@@ -51,7 +51,15 @@ nav ul li a:hover {
 }
 h1 {
     text-align: center;
+    font-family: 'Merienda', cursive;
     color: white;
+    padding-bottom: 4px;
+}
+h4 {
+    font-family: 'Merienda', cursive;
+}
+a {
+    font-family: 'Libre Baskerville', serif;
 }
 hr.star {
     padding: 0;
@@ -124,6 +132,7 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 20px 50px 0px 20px;
     padding: 10px;
+    font-family: 'Sumana', serif;
     color: white;
 }
 .half {
@@ -343,7 +352,7 @@ footer {
     }
     .block {
         min-height: 120%;
-}
+    }
 }
 @media screen and (max-width: 991px) {
     figure {
