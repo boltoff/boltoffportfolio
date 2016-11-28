@@ -341,6 +341,9 @@ footer {
     #mobilebar {
         display: block;
     }
+    .block {
+        min-height: 120%;
+}
 }
 @media screen and (max-width: 991px) {
     figure {
